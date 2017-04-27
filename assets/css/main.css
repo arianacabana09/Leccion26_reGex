@@ -1,0 +1,40 @@
+*{
+  font-family: 'Dosis';
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+.contenedor{
+  display: block;
+  position: relative;
+  left: 550px;
+  width: 500px;
+}
+
+.formulario-data{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+}
+
+.data-input{
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  width: 300px;
+}
+
+#enviar{
+  display: block;
+  margin: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  width: 300px;
+}
