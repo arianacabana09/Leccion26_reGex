@@ -8,7 +8,6 @@ var crtCantidad = /^\s+|\s+$/;
 enviar.addEventListener("click",function(event){
   if (psw.value.length < 6 || crtCantidad.test(psw.value)){
     msg.innerText = "Ingrese una contraseña: mínimo 6 carácteres";
-    psw.onfocus();
   } else if(psw.value == "123456"){
     msg.innerText = "La contraseña debe ser diferente de 123456";
   } else if(psw.value == "098754"){
