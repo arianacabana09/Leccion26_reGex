@@ -17,7 +17,7 @@
     <form class="formulario-data" action="index.html" id="form">
       <div class="contenedor-data-name">
         <label for="form">Nombre y Apellido</label>
-        <input type="text" class="data-input" name="" id="nomApell" for="form" pattern="[A-Z]{1}[a-zA-Z+\s]{3,100}" title="Primera letra Mayuscula" required>
+        <input type="text" class="data-input" name="" id="nomApell" for="form" pattern="[A-Z]{1}[a-zA-Z+\s]{3,100}" title="Primera letra Mayuscula" autofocus="" required>
       </div>
       <div class="contenedor-data-id">
         <label for="">Documento de Identidad</label>
@@ -25,23 +25,23 @@
       </div>
       <div class="contenedor-data-nac">
         <label for="">Fecha de Nacimiento</label>
-        <input type="date" class="data-input" name="" id="fechaNac" value="" required>
+        <input type="date" class="data-input" max="1999-12-31" name="" id="fechaNac" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).1[0-9]{3}" required>
       </div>
       <div class="contenedor-data-phone">
         <label for="">N° Celular</label>
         <input type="tel" class="data-input" name="" id="celular"  pattern="^[9]\d{8}$" required>
         <label for="">N° Telefono Fijo</label>
-        <input type="tel" class="data-input" name="" id="telf" pattern="^[0-9]\d{7}$" required>
+        <input type="tel" class="data-input" name="" id="telf" pattern="^[0-9]\d{6}$" required>
       </div>
       <div class="contenedor-data-psw">
         <label for="">Contraseña</label>
-        <input type="password" class="data-input" name="" id="psw" value="" required>
+        <input type="password" class="data-input" name="" id="psw" pattern="{6,40}" required>
         <label for="">Verificacion de contraseña</label>
-        <input type="password" class="data-input" name="" id="pswVerificado" value="" required>
+        <input type="password" class="data-input" name="" id="pswVerificado" pattern="{6,40}" required>
       </div>
       <div class="contenedor-data-comentario">
         <label for="">Comentario</label>
-        <textarea name="name" class="data-input" id="comentario" rows="8" cols="80" required></textarea>
+        <textarea name="name" class="data-input" id="comentario" rows="10" required></textarea>
       </div>
       <input type="checkbox" name="" value="">
       <label for="">Acepto los términos y condiciones</label>
