@@ -14,14 +14,14 @@
 <body>
   <h1>Validación ReGex</h1>
   <div class="contenedor">
-    <form class="formulario-data" action="index.html">
+    <form class="formulario-data" action="index.html" id="form">
       <div class="contenedor-data-name">
-        <label for="">Nombre y Apellido</label>
-        <input type="text" class="data-input" name="" id="nomApell" value="" pattern="[A-Z]{1}[a-zA-Z+\s]{3,100}" title="Primera letra Mayuscula" required>
+        <label for="form">Nombre y Apellido</label>
+        <input type="text" class="data-input" name="" id="nomApell" for="form" pattern="[A-Z]{1}[a-zA-Z+\s]{3,100}" title="Primera letra Mayuscula" required>
       </div>
       <div class="contenedor-data-id">
         <label for="">Documento de Identidad</label>
-        <input type="number" class="data-input" name="" id="dni" value="" required>
+        <input type="text" class="data-input" name="" id="dni" pattern="[0-9]{8}" required>
       </div>
       <div class="contenedor-data-nac">
         <label for="">Fecha de Nacimiento</label>
@@ -29,9 +29,9 @@
       </div>
       <div class="contenedor-data-phone">
         <label for="">N° Celular</label>
-        <input type="number" class="data-input" name="" id="celular" pattern="^[0-9]\d{8}$" required>
+        <input type="tel" class="data-input" name="" id="celular"  pattern="^[9]\d{8}$" required>
         <label for="">N° Telefono Fijo</label>
-        <input type="number" class="data-input" name="" id="celular" value="" required>
+        <input type="tel" class="data-input" name="" id="telf" pattern="^[0-9]\d{7}$" required>
       </div>
       <div class="contenedor-data-psw">
         <label for="">Contraseña</label>
@@ -45,7 +45,7 @@
       </div>
       <input type="checkbox" name="" value="">
       <label for="">Acepto los términos y condiciones</label>
-      <button type="submit" name="button" id=" enviar">Enviar</button>
+      <button type="submit" name="button" id="enviar">Enviar</button>
     </form>
   </div>
   <script type="text/javascript" src="assets/js/app.js"></script>
