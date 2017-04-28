@@ -35,9 +35,12 @@
       </div>
       <div class="contenedor-data-psw">
         <label for="">Contraseña</label>
-        <input type="password" class="data-input" name="" id="psw" pattern="{6,40}" required>
+        <input type="password" class="data-input" name="" id="psw" pattern="[A-Za-z]{8,20}" required>
+        <span id="msj"></span>
+        <br>
         <label for="">Verificacion de contraseña</label>
-        <input type="password" class="data-input" name="" id="pswVerificado" pattern="{6,40}" required>
+        <input type="password" class="data-input" name="" id="pswVerificado" required>
+        <span id="msjv"></span>
       </div>
       <div class="contenedor-data-comentario">
         <label for="">Comentario</label>
